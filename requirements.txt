@@ -1,0 +1,19 @@
+numpy>=2.0
+pandas>=2.2
+duckdb>=1.5
+dbt-core>=1.12
+dbt-duckdb>=1.10
+pandera[io]>=0.32
+chromadb>=1.5
+ollama>=0.6
+streamlit>=1.35
+plotly>=5.22
+
+# NOTE: great_expectations was the originally-planned tool for the
+# statistical validation layer but was substituted with Pandera in this
+# environment - see README Section 9 for why.
+#
+# NOTE: the GenAI features also require Ollama itself (a separate
+# application, not a pip package) with the qwen2.5:0.5b model pulled:
+#   winget install Ollama.Ollama
+#   ollama pull qwen2.5:0.5b

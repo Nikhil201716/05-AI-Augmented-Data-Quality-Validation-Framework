@@ -1,0 +1,42 @@
+{
+  "total_checks": 5,
+  "passed": 3,
+  "failed": 2,
+  "checks": [
+    {
+      "check_name": "plausible_value_ranges",
+      "layer": "fct_orders",
+      "status": "FAIL",
+      "detail": "55 value(s) fell outside plausible ranges: {'in_range(1, 20)': 25, 'in_range(1.0, 500.0)': 30}",
+      "n_failing_rows": 55
+    },
+    {
+      "check_name": "email_format_valid",
+      "layer": "stg_customers",
+      "status": "PASS",
+      "detail": "All customer emails match a valid email pattern.",
+      "n_failing_rows": 0
+    },
+    {
+      "check_name": "daily_volume_anomaly_detection",
+      "layer": "fct_orders (time series)",
+      "status": "FAIL",
+      "detail": "1 day(s) had statistically anomalous order volume vs. the 222-order average (std=26): 2026-06-17 (341 orders, z=4.56)",
+      "n_failing_rows": 1
+    },
+    {
+      "check_name": "missing_customer_rate_threshold",
+      "layer": "fct_orders",
+      "status": "PASS",
+      "detail": "Missing-customer rate 0.07% is within the 2% acceptable threshold.",
+      "n_failing_rows": 0
+    },
+    {
+      "check_name": "orphan_product_rate_threshold",
+      "layer": "fct_orders",
+      "status": "PASS",
+      "detail": "Orphaned-product rate 0.06% is within the 1% acceptable threshold.",
+      "n_failing_rows": 0
+    }
+  ]
+}
