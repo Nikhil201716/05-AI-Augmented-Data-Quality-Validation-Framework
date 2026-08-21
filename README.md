@@ -1,13 +1,13 @@
 # AI-Augmented Data Quality & Validation Framework
 
-**A Data Engineer / AI Engineer portfolio project:** a real dbt + DuckDB transformation pipeline,
+**A project I built to learn analytics engineering and retrieval-augmented generation:** a real dbt + DuckDB transformation pipeline,
 a statistical validation layer, and a fully local, citation-backed **AI Data Quality Copilot** —
 built to let anyone on a team ask "what's wrong with the data and why?" in plain English, grounded
 in real test results, not a hallucinated guess.
 
 > Built by Nikhil Sinha. This project was built specifically to fold GenAI/RAG skills into the
 > "traditional" data-engineering track (dbt, data validation) rather than treating them as separate
-> tracks — because that combination is exactly what's differentiating candidates right now. Every
+> tracks, because I wanted to understand how the two fit together rather than studying them separately. Every
 > result below is from real, executed pipeline runs — see Section 5 for unedited evidence. All data
 > is synthetically generated; see Section 9 for full methodology and tooling honesty notes.
 
@@ -24,7 +24,7 @@ test results — not a model's imagination.
 
 ---
 
-## 2. What Makes This "Industry-Level," Not a Tutorial Clone
+## 2. What I Was Trying to Get Right
 
 - **A real, deliberately injected single-day incident** (2026-06-17) that a naive aggregate-rate
   check would completely miss — see Finding #2 in the assessment report, the single most important
@@ -231,7 +231,7 @@ file.
 
 ---
 
-## 10. Skills Demonstrated
+## 10. What I Learned Building This
 
 dbt (staging/intermediate/marts modeling, schema + custom singular tests) · DuckDB · Data
 Validation & Data Reconciliation · Statistical/Anomaly Detection (Pandera, z-score analysis) ·
